@@ -10,6 +10,7 @@
    --hero-footer-background: #2F303A;
    --button-hover-background: #188CE8;
    --line-color: #ECECEC;
+   --second-line-color: #EEEEEE;
 }
 *,
 *::before,
@@ -237,7 +238,6 @@ body {
     line-height: 1.71;
     color: var(--footer-color);
 }
-
 .contactsfooter:hover,
 .contactsfooter:focus {
     color: var(--hover-color)
@@ -254,12 +254,12 @@ body {
     background-color: var(--primary-background);
 }
 .btn {
-    display: inline-flex;
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
+    border-color: transparent;
+    margin-bottom: 50px;
 }
 .portfolio-button {
-    /* display: flex;  */
-    /* justify-content: center; */
     font-family: inherit;
     cursor: pointer;
     font-weight: 500;
@@ -267,6 +267,8 @@ body {
     line-height: 1.63;
     letter-spacing: 0.03em;
     color: var(--primary-color);
+    padding: 6px 22px;
+    margin-left: 8px;
 }
 .portfolio-button:hover {
     color: var(--fourth-color); 
@@ -276,10 +278,22 @@ body {
     color: var(--fourth-color);
     background-color: var(--hover-color);
 }
-.portfolio-img {
+.portfolio-imgs {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.portfolio-img {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--second-line-color);
 }
 .project-name {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+    margin-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -287,6 +301,8 @@ body {
     color: var(--primary-color)
 }
 .project-description {
+    display: flex;
+    margin: 20px 24px;
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-color)
