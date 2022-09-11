@@ -101,8 +101,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .contacts:hover, .contacts:focus {
     color: var(--hover-color)
