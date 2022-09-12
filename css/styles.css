@@ -48,7 +48,7 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.line-header {
+.header {
     border-bottom: 1px solid var(--line-color);
 }
 .header-container {
@@ -93,7 +93,7 @@ body {
 }
 .contacts-menu {
     display: flex;
-    margin-left: auto;
+    margin-left: 344px;
 }
 .contacts {
     font-weight: 500;
@@ -101,6 +101,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contacts:hover, .contacts:focus {
     color: var(--hover-color)
@@ -112,6 +114,7 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--hero-footer-background);
+    text-align: center;
 }
 .hero {
     font-weight: 900;
@@ -121,9 +124,12 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: var(--fourth-color);
+    max-width: 696px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
 }
 .button {
-    display: block;
     cursor: pointer;
     font-family: inherit;
     background-color: var(--hover-color);
@@ -133,9 +139,6 @@ body {
     letter-spacing: 0.06em;
     color: var(--fourth-color);
     padding: 10px 32px;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
 }
 .button:hover, .button:focus {
     background-color: var(--button-hover-background);
@@ -219,20 +222,21 @@ body {
     padding-bottom: 60px;
 }
 .logo-footer {
-    display: flex;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--third-color);
-    margin-bottom: 20px;
 }
 .logostudiofooter {
     color: var(--fourth-color);
 }
 .contactsfooter-list {
-    display: flex;
+    margin-top: 20px;
+}
+.footer-list:not(:last-child) {
+    margin-bottom: 9px;
 }
 .contactsfooter {
     font-style: normal;
@@ -242,13 +246,11 @@ body {
 .contactsfooter:hover,
 .contactsfooter:focus {
     color: var(--hover-color);
-    margin-bottom: 9px;
 }
 .adressfooter {
     font-style: normal;
     line-height: 1.71;
     color: var(--fourth-color);
-    margin-bottom: 9px;
 }
 .adressfooter:hover, .adressfooter:focus {
     color: var(--hover-color)
@@ -289,9 +291,9 @@ body {
 .project {
     padding: 20px 24px;
     border: 1px solid var(--second-line-color);
+    border-top: transparent;
 }
 .project-name {
-    display: flex;
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -300,7 +302,6 @@ body {
     color: var(--primary-color)
 }
 .project-description {
-    display: flex;
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-color)
