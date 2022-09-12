@@ -96,6 +96,7 @@ body {
     margin-left: 344px;
 }
 .contacts {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -139,6 +140,8 @@ body {
     letter-spacing: 0.06em;
     color: var(--fourth-color);
     padding: 10px 32px;
+    border-radius: 4px;
+    border-color: transparent;
 }
 .button:hover, .button:focus {
     background-color: var(--button-hover-background);
